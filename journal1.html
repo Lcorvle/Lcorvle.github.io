@@ -1,0 +1,197 @@
+<!--主页-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html" charset=gb2312>
+        <title>
+            前 端 设 计 与 审 美
+        </title>
+
+        <!--CSS设置-->
+        <style>
+        .background
+        {
+          opacity: 0.5; 
+        }
+        .buttonImg img:hover
+        {
+            opacity: 1;
+        }
+        .buttonImg img
+        {
+            opacity: 0.8;
+        }
+        .specialFontInput
+        {
+            font-family: "华文行楷";
+            font-size: 25px;
+        }
+        #buttonHome
+        {
+            margin-right: 94%;
+            margin-left: 1%;
+            margin-top: 6%;
+            margin-bottom: 60%;
+        }
+        #journalContent
+        {
+            margin-right: 10%;
+            margin-left: 10%;
+            max-width: 1300px;
+            width: 100%;
+            height: 100%;
+            margin-top: 60%;
+            max-height: 3000px;
+        }
+        #specialFontButton
+        {
+            font-family: "华文行楷";
+            font-size: 30px;
+            opacity: 0.8;
+        }
+        #specialFontButton:hover
+        {
+            font-family: "华文行楷";
+            font-size: 30px;
+            opacity: 1;
+        }
+        #userPhoto img:hover
+        {
+            opacity: 1;
+        }
+        #userPhoto img
+        {
+            opacity: 0.8;
+        }
+        #journal1 img:hover
+        {
+            opacity: 1;
+        }
+        #journal1 img
+        {
+            opacity: 0.85;
+        }
+        #buttonPersonal
+        {
+            margin-left: 8%;
+            margin-right: 76%;
+            margin-top: 1%;
+            border-radius: 40%;
+        }
+        #buttonProjects
+        {
+            margin-left: 42%;
+            margin-right: 42%;
+            margin-top: 1%;
+            border-radius: 40%;
+        }
+        #buttonMail
+        {
+            margin-left: 76%;
+            margin-right: 8%;
+            margin-top: 1%;
+            border-radius: 40%;
+        }
+        #userPhoto
+        {
+            margin-right: 40%;
+            margin-left: 40%;
+            margin-top: 10%;
+            margin-bottom: 40%;
+        }
+        #journalsTable
+        {
+            max-width: 500px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 38%;
+        }
+        #journal1
+        {
+            margin-right: 89%;
+            margin-left: 1%;
+            margin-top: 30%;
+        }
+        .ellipseImg img
+        {
+            border-radius: 50%;
+        }
+        .commonImg img
+        {
+            border-radius: 5%;
+        }
+        </style>
+    </head>
+    <body>
+        <!--背景图片-->
+        <div class="background" id="background" style="position:absolute; z-index:-1;">
+            <img src="homepage_background.jpg" width="100%"/>
+        </div>
+
+        <!--用户头像-->
+        <div class="ellipseImg" id="userPhoto" style="position:absolute; z-index:0;">
+            <a href="personal.html">
+                <img src="photo.jpg" height="100%" width="100%"/>
+            </a>
+        </div>
+
+        <!--按钮-->
+        <div class="buttonImg" id="buttonPersonal" style="position:absolute; z-index:0;">
+            <a href="personal.html">
+                <img src="buttonPersonal.jpg" height="100%" width="100%" />
+            </a>
+        </div>
+        <div class="buttonImg" id="buttonProjects" style="position:absolute; z-index:0;">
+            <a href="projects.html">
+                <img src="buttonProjects.jpg" height="100%" width="100%" />
+            </a>
+        </div>
+        <div class="buttonImg" id="buttonMail" style="position:absolute; z-index:0;">
+            <a href="mailto:xsx1996@163.com?subject=test&cc=xsx1996@hotmail.com&body=use mailto xsx1996">
+                <img src="buttonMail.jpg" height="100%" width="100%" />
+            </a>
+        </div>
+        <!--日志-->
+        <div class="ellipseImg" id="journal1" style="position:absolute; z-index:0;">
+            <a href="journal1.html">
+                <img src="journal1.jpg" height="100%" width="100%"/><br>
+            </a>
+            <font size=4 face="华文行楷"> 前 端 设 计 与 审 美</font>
+        </div>
+        
+        <div id="journalContent" style="position:absolute; z-index:0;">
+            
+            <iframe src="前端设计与审美.txt" height="100%" width="100%"></iframe>
+            
+        </div>
+        <!--日志链接列表-->
+        <div id="journalsTable" style="position:absolute; z-index:0;">
+            <form method="POST" align="center">
+                <table border="0" cellspacing="10" cellpadding="0" align=left>
+                    <th colspan="2" height="60">
+                        <font size=7 face="华文行楷">日志</font>
+                    </th>
+                    <tr>
+                        <td>
+                            <div align="left">1，
+                                <a class="link" href="journal1.html" target="_blank" style="text-decoration: none">
+                                    前端设计与审美
+                                </a>
+                            </div>
+                        </td>
+                        <td align="right">
+                            2016年6月30日
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <!--返回主界面按钮-->
+        <div class="buttonImg" id="buttonHome" style="position:absolute; z-index:0;">
+            <a href="index.html" class="ellipseImg">
+                <img src="buttonHome.jpg" height="100%" width="100%"/>
+            </a>
+        </div>
+    </body>
+</html>
