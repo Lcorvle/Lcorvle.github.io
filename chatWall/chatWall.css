@@ -1,0 +1,29 @@
+/*画布与marquee标签的显示层*/
+#canvasDiv
+{
+	z-index: 0;
+	position: absolute;
+}
+.marqueeDiv
+{
+	z-index: 1;
+	position: absolute;
+}
+
+
+/*显示四个消息的内容的marquee标签*/
+#marquee0, #marquee1, #marquee2, #marquee3
+{
+	font-size: 45px;
+	height: 47px;
+	font-family: "Helvetica";
+}
+
+/*显示公告marquee标签*/
+#marquee4
+{
+	font-size: 70px;
+	height: 72px;
+	opacity: 0.8;
+	font-family: "Helvetica";
+}
