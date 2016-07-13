@@ -1,0 +1,139 @@
+@font-face{
+	font-family: "GAMETITLE";
+	src:url('Resource/font/title.ttf');
+}
+
+#game_title{
+	font-size: 20vh;
+	font-family: "GAMETITLE";
+	position: fixed;
+	width: 100%;
+	text-align: center;
+}
+
+/*---------xsx---------------------*/
+#arrow_switch{
+	position: fixed;
+	border-radius: 20px;
+	width: 140px;
+	text-align: center;
+	z-index: 100;
+}
+
+#support_switch{
+	position: fixed;
+	border-radius: 20px;
+	width: 140px;
+	text-align: center;
+	z-index: 100;
+}
+/*---------------------------------*/
+
+.menu_button{
+	position: fixed;
+	width: 20vw;
+	height: 10vh;
+	line-height: 12vh;
+	text-align: center;
+	z-index: 100;
+	background: #58D3F7;
+	border-radius: 2vw;
+	border-width: 2vw;
+	border-color: #EFFBFB;
+	color: white;
+}
+
+#new_game_button{
+	position: fixed;
+	width: 30vw;
+	height: 12vh;
+	line-height: 12vh;
+	text-align: center;
+	z-index: 100;
+	background: #58D3F7;
+	border-radius: 2vw;
+	border-width: 2vw;
+	border-color: #EFFBFB;
+	color: white;
+}
+
+#new_game_button:hover{
+	background: yellow;
+	color: black;
+	cursor: hand
+}
+#new_game_text{
+	font-family: "GAMETITLE";
+	font-size: 8vh;
+}
+
+.menu_text{
+	font-family: "GAMETITLE";
+	font-size: 8vh;
+}
+
+
+body .menu_button:hover{
+	background: yellow;
+	color: black;
+	cursor: hand
+}
+
+.game_board_section{
+	position: fixed;
+	border-radius: 20px;
+	background-color: blue;
+	width: 140px;
+	height: 100px;
+	text-align: center;
+	z-index: 100;
+}
+
+.soldier_money{
+	position: fixed;
+	font-size: 2vw;
+	font-family: "GAMETITLE";
+	text-align: center;
+	z-index: 101;
+}
+
+.game_board_section img{
+	position: relative;
+	top:30px;
+}
+
+#my_money{
+	position: fixed;
+	left: 5vw;
+	font-size: 2vw;
+	font-family: "GAMETITLE";
+}
+#arrow_text{
+	position: fixed;
+	left: 5vw;
+	font-size: 2vw;
+	font-family: "GAMETITLE";
+}
+
+#arrow_control_up {
+	position: fixed;
+	left: 5vw;
+  	width: 0; 
+  	height: 0; 
+ 	border-left: 2vw solid transparent;
+ 	border-right: 2vw solid transparent;
+  
+  	border-bottom: 6vh solid; 
+  	border-bottom-color: #07d2fb;
+}
+
+#arrow_control_down {
+	position: fixed;
+	left: 5vw;
+  	width: 0; 
+  	height: 0; 
+ 	border-left: 2vw solid transparent;
+ 	border-right: 2vw solid transparent;
+  
+  	border-top: 6vh solid #07d2fb;
+}
