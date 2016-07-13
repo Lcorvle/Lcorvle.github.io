@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<title>CASTLE FIGHT</title>
+		<link rel="stylesheet" type="text/css" href="Resource/lib/Shake/csshake.css">
+		<link rel="stylesheet" type="text/css" href="game_start.css">
+	</head>
+	<script src='game_init.js'></script>
+	<script src='soldier.js'></script>
+	<script src='castle.js'></script>
+	<script src='AI.js'></script>
+	<script src='money.js'></script>
+	<script src='HP.js'></script> 
+	<script src='arrow.js'></script> 
+	<script src='attack.js'></script> 
+	<script src='support.js'></script> 
+	<script src='game_end.js'></script> 
+	<script>	
+		var background;
+		var background_original_width = 2736;
+		var background_original_height = 440;
+		var background_ready = false;
+
+		var is_entering = false;
+
+		var has_game_started = false;
+
+		var scale;
+
+		window.onload = function(){
+			scale = window.innerHeight / background_original_height;
+			game_init();
+			all_image_init();
+			start_engine();
+
+		}
+	</script>
+	<script src='game_engine.js'></script>
+	
+	<body style="margin:0">
+	</body>
+	
+</html>
